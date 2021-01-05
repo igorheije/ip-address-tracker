@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-container"></div>
+    <div class="dados">
+      <div class="pesquisa-ip">
+        <h2>IP Address Tracker</h2>
+        <form action="" id="form">
+          <input type="text" id="ip-address" placeholder="Search for any IP address or domain">
+          <button id="submit"><i src="./images/icon-arrow.svg"></i></button>
+        </form>
+      </div>
+      <div class="add">
+        <span id="address1">IP Address</span>
+        <span id="address2">Location</span>
+        <span id="address3">Timezone</span>
+        <span id="address4">ISP </span>
+
+
+
+
+        <!-- add offset value dynamically using the API -->
+
+
+      </div>
+    </div>
+    <div id="mapid"></div>
+  </div>
+  <div class="attribution">
+    <a href="#">Igor Heije</a>.
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
